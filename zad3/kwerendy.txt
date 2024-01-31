@@ -1,0 +1,7 @@
+kw1.
+SELECT nazwa, ulica FROM `kwiaciarnie`WHERE miasto="Malbork";
+kw2.
+SELECT `id_kwiaciarni`,COUNT(`id_zam`) FROM `zamowienia` GROUP by `id_kwiaciarni`;
+kw3.SELECT `nazwa`,`miasto`, zamowienia.kwiaty FROM `kwiaciarnie` INNER JOIN zamowienia ON kwiaciarnie.id_kwiaciarni=zamowienia.id_kwiaciarni WHERE zamowienia.data="2017-01-07";
+kw4.
+CREATE TABLE klienci ( id int AUTO_INCREMENT PRIMARY KEY NOT null, imie varchar(15), nazwisko varchar(15), rabat int );
